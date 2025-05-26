@@ -1,0 +1,98 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1742519074325
+  modified: 1742519074325
+collection:
+  - name: SWAPI
+    meta:
+      id: fld_7d3eca053838447ab9149c7ab8eb7e27
+      created: 1742519089268
+      modified: 1742519089268
+      sortKey: -1742519089268
+  - name: CMS
+    meta:
+      id: fld_818c242bcc954fe8963a7abb11dfcc36
+      created: 1743723949410
+      modified: 1743723949410
+      sortKey: -1743723949410
+  - name: CMS
+    meta:
+      id: fld_9355d4a3d52c4dc796eee26dbc959cee
+      created: 1743723949410
+      modified: 1743723949410
+      sortKey: -1743723949410
+  - name: QUBITRO
+    meta:
+      id: fld_163e56b7936c48b3a0884db1b1a733b9
+      created: 1747953357548
+      modified: 1747953357548
+      sortKey: -1747953357548
+    children:
+      - url: https://api.qubitro.com/v2/projects/PROJETO_ID/devices/DEVICE_ID/data
+        name: GET DATA
+        meta:
+          id: req_235a9748e0e843a6a9be02ecfb54e854
+          created: 1747953360705
+          modified: 1747956161306
+          isPrivate: false
+          sortKey: -1747953360705
+        method: GET
+        parameters:
+          - id: pair_acf659e00c3d4658ab78cbf4c32100e1
+            name: page
+            value: "1"
+            disabled: false
+          - id: pair_11235e779d4d4a4c91924042c2839684
+            name: limit
+            value: "10"
+            disabled: false
+          - id: pair_acccee3648ef43be87ab729465a90f5e
+            name: range
+            value: all
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_9941c701ca344e23b7e86b0cd190327b
+          - id: pair_4bc9794377fa448dbd3895697e65aa8e
+            name: Authorization
+            value: Bearer MEU_TOKEN
+            disabled: false
+          - id: pair_785479d5456f444091d61f2b22890e90
+            name: Accept
+            value: application/json
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742519080261
+    modified: 1743719586445
+  cookies:
+    - key: _auth_new_session
+      value: 828dfd15d9b288aa80f7dcec45a37f41
+      domain: api.contentful.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-04-03T22:32:46.153Z
+      lastAccessed: 2025-04-03T22:33:06.444Z
+      id: 10427cbf-e347-4f7a-978c-1e995b35aa93
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1742519080180
+    modified: 1742519080180
+    isPrivate: false
